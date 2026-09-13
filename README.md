@@ -1,6 +1,14 @@
 # hw_final — Projects API
 
-Итоговое домашнее задание по курсу Docker + FastAPI. Приложение на FastAPI с JWT-аутентификацией, CRUD для сущности `Project`, кешированием через Redis и хранением данных в PostgreSQL.
+Итоговое домашнее задание по теме "Docker+FastAPI". Приложение на FastAPI с JWT-аутентификацией, CRUD для сущности `Project`, кешированием через Redis и хранением данных в PostgreSQL.
+
+## GitHub репозиторий
+
+https://github.com/VladCheresh/hw-final-chervlad
+
+## Публичный URL (деплой на Render)
+
+https://hw-final-chervlad.onrender.com
 
 ## Стек
 
