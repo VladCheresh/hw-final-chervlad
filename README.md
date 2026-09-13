@@ -31,7 +31,7 @@ https://hw-final-chervlad.onrender.com
    ```
    pip install -r requirements.txt
    ```
-3. Поднять PostgreSQL и Redis локально (например, через отдельные Docker-контейнеры) и указать переменную окружения `DATABASE_URL` (см. пример `.env` ниже).
+3. Поднять PostgreSQL и Redis локально (например, через отдельные Docker-контейнеры) и указать переменные окружения (см. пример `.env` ниже).
 4. Применить миграции:
    ```
    alembic upgrade head
@@ -76,6 +76,9 @@ docker-compose run web python -m pytest
 
 ```
 DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/hw_final_chervlad
+SYNC_DATABASE_URL=postgresql://postgres:postgres@db:5432/hw_final_chervlad
+REDIS_URL=redis://redis:6379
+SECRET_KEY=your_secret_key
 ```
 
 ## Эндпоинты
