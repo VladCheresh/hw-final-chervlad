@@ -100,7 +100,7 @@ async def get_accounts_count(db: AsyncSession):
     all_accounts = result.scalars().all()
 
     return ({
-        'Всего зарегестрированных аккаунтов': len(all_accounts),
+        'Всего зарегистрированных аккаунтов': len(all_accounts),
         'Всего обычных пользователей': sum(1 for a in all_accounts
                                            if a.role == 'user'),  # type:ignore
         'Всего админ-аккаунтов': sum(1 for a in all_accounts
